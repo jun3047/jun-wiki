@@ -96,7 +96,7 @@ alert( 1 + '2' ); // '12', 문자열
 cond ? 'true면 반환' : 'false면 반환'
 ```
 
-**논리 연산자** `&&(AND) ||``(OR)!(NOT)`
+**논리 연산자** `&&(AND) ||(OR)!(NOT)`
 
 ```javascript
 true && false // 하나라도 false면 false
@@ -274,6 +274,10 @@ switch(x) {
 
 ### 객체 연산
 
+
+
+Key를 동적으로 할당할 때
+
 ```javascript
 let fruit = prompt("어떤 과일을 구매하시겠습니까?", "apple");
 
@@ -293,16 +297,12 @@ alert( bag.apple ); // fruit에 "apple"이 할당되었다면, 5가 출력됩니
 
 
 
-
-
-`for..in` 반복문을 사용하면 객체의 모든 키를 순회할 수 있습니다. `for..in`은 앞서 학습했던 `for(;;)` 반복문과는 완전히 다릅니다.
-
-문법:
+Key를 순회할 때
 
 ```javascript
 for (key in object) {
   // 각 프로퍼티 키(dkaey)를 이용하여 본문(body)을 실행합니다.
-}ds
+}
 ```
 
 \
