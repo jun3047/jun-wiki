@@ -1,10 +1,10 @@
-# 기본 문법
+# 개발 언어로써 JS
 
 
 
 ### 세미콜론은 항상 씁시다.
 
-세미콜론은 _생략할 수 있습니다. 허나 예외적인 상황이 있기에, 쓰는 걸 권장합니다._
+세미콜론은 생략할 수 있습니다. 허나 예외적인 상황이 있기에, 쓰는 걸 권장합니다.
 
 
 
@@ -230,7 +230,7 @@ switch(x) {
 
 ### **권장하는 코딩 스타일**
 
-<figure><img src="../../.gitbook/assets/스크린샷 2024-05-08 오후 4.43.06.png" alt=""><figcaption><p>출처 <a href="https://ko.javascript.info/coding-style">https://ko.javascript.info/coding-style</a></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/스크린샷 2024-05-08 오후 4.43.06.png" alt=""><figcaption><p>출처 <a href="https://ko.javascript.info/coding-style">https://ko.javascript.info/coding-style</a></p></figcaption></figure>
 
 또한 함수 선언과 포함된 주요 코드를 먼저 작성하고, 함수를 선언하는 것이 좋습니다.
 
