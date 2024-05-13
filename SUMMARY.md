@@ -2,6 +2,10 @@
 
 * [이 위키의 목적](README.md)
 * [위키의 구성](undefined.md)
+* [웹 공부 전에 알아야 하는 사항](undefined-1/README.md)
+  * [우리가 웹을 보는 과정](undefined-1/undefined.md)
+  * [JS가 서버에 빌드되고 파싱되는 과정](undefined-1/js.md)
+  * [렌더링 방식 (SSR, CSR, SSG, ISR)](undefined-1/ssr-csr-ssg-isr.md)
 * [JavaScript라는 녀석에 대해](javascript/README.md)
   * [JS with 웹, HTML, CSS](javascript/js-with-html-css.md)
   * [개발 언어로써 JS](javascript/js.md)
