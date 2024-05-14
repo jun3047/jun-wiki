@@ -13,5 +13,4 @@
   * [웹 안에서의 JS](javascript/js-1.md)
   * [구속된 JS = TypeScript](javascript/js-typescript.md)
 * [React, 최고의 JS 라이브러리](react-js.md)
-* [Page](page.md)
 * [Next, 최고의 React Web 프레임워크](next-react-web.md)
