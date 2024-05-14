@@ -101,6 +101,8 @@ export default App;
 
 
 
+**next 예시**
+
 ```javascript
 import React from 'react';
 
@@ -142,15 +144,52 @@ export default HomePage;
 
 
 
-/cod
+**next 예시**
+
+```javascript
+import React from 'react';
+
+const HomePage = ({ data }) => {
+  return (
+    <div>
+      <h1>Home Page</h1>
+      <p>{data.message}</p>
+    </div>
+  );
+};
+
+export async function getStaticProps() {
+  const res = await fetch('https://api.example.com/data');
+  const data = await res.json();
+
+  return {
+    props: {
+      data,
+    },
+    revalidate: 10, // 10초마다 페이지를 재생성
+  };
+}
+
+export default HomePage;
+```
+
+위 예제에서 getStaticProps 함수는 SSG와 유사하게 작동하지만, revalidate 속성을 통해 페이지가 10초마다 재생성되도록 설정합니다. 이렇게 하면 사용자에게 최신 데이터를 제공할 수 있습니다.
 
 
 
+### 결론
+
+React와 Next.js를 활용하면 다양한 렌더링 방식을 쉽게 구현할 수 있습니다. 각 방식은 장단점이 있으며, 애플리케이션의 요구사항에 맞게 적절한 방식을 선택하는 것이 중요합니다.
 
 
 
+• SSR: 서버 부하를 감수하더라도 초기 로드 속도와 SEO가 중요한 경우.
 
+• CSR: 사용자 인터페이스가 복잡하고 동적일 때, 초기 서버 부하를 줄이고자 할 때.
 
+• SSG: 서버 부하를 최소화하고 빠른 페이지 로드를 원할 때, 자주 변경되지 않는 데이터를 다룰 때.
+
+• ISR: 빠른 초기 로드 속도와 SEO의 장점을 유지하면서도 동적 콘텐츠 업데이트가 필요한 경우.
 
 
 
